@@ -1,0 +1,40 @@
+.footer {
+  background: #000000;
+  margin-top: 100px;
+}
+.footer-inner {
+  display: flex;
+  padding: 40px 0;
+}
+.footer-all {
+  display: flex;
+  margin-left: auto;
+}
+.footer-box  + .footer-box {
+  margin-left: 100px;
+}
+.footer-paragraph {
+  font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+color: #FFFFFF;
+}
+.footer-list {
+ list-style-type: none;
+ padding: 0;
+ margin: 0;
+}
+.footer-item {
+  margin-top: 14px;
+}
+.footer-item-link {
+  font-family: 'Segoe UI';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+color: #FFFFFF;
+text-decoration: none;
+}

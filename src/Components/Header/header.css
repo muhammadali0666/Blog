@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  align-items: center;
+  margin-top: 26px;
+}
+.header-items {
+  font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+text-transform: uppercase;
+color: #9A9A9A;
+margin-left: 30px;
+padding: 0;
+text-decoration: none;
+}
+.header-item {
+  font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 21px;
+text-transform: uppercase;
+color: #9A9A9A;
+margin-left: 30px;
+padding: 0;
+text-decoration: none;
+}
+.header-item:hover{
+  color: #3D3D3D;
+  border-bottom: 1px solid #3D3D3D;
+}
+.header-list {
+  list-style-type: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+.header-form {
+  display: flex;
+  align-items: center;
+}
+.header-input {
+  background: #F4F4F4;
+border-radius: 3px;
+font-family: 'Roboto Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #474747;
+padding-top: 12px;
+padding-bottom: 12px;
+padding-left: 14px;
+border: none;
+}
+.header-btn {
+  background: #FFBA9D;
+border-radius: 3px;
+padding: 8px 12px;
+border: none;
+}
