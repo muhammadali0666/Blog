@@ -13,6 +13,7 @@ export const Posts = () => {
   const prevs = useRef(null)
   const next = useRef(null)
 
+
   useEffect(() => {
     async function myfunc() {
       const res = await fetch(
@@ -36,6 +37,7 @@ export const Posts = () => {
     setCount((count) => count + 1)
   }
   console.log(count);
+
   return (
     <Layout className="container d-flex">
       <div className="container d-flex">
@@ -68,10 +70,10 @@ export const Posts = () => {
               ))}
           </ul>
           <div className="buttons ms-auto mt-5">
-            <button ref={prevs} onClick={handlePrev} className="btn btn-dark ms-auto">
+            <button disabled={count === 0 ? true : false} ref={prevs} onClick={handlePrev} className="btn btn-dark ms-auto">
               Prev
             </button>
-            <button ref={next} onClick={handleNext} className="btn btn-dark ms-3">
+            <button disabled={count === 7 ? true : false} ref={next} onClick={handleNext} className="btn btn-dark ms-3">
               Next
             </button>
           </div>
