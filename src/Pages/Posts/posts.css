@@ -1,0 +1,76 @@
+.card {
+  margin-top: 46px;
+}
+
+.paragraphs {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #474747;
+  margin-bottom: 58px;
+  margin-top: 100px;
+}
+
+.card-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card-box-p {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #777777;
+}
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.card-box-text {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  color: #777777;
+}
+
+.card-box-paragraph {
+  max-width: 544px;
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 28px;
+  color: #474747;
+  margin-bottom: 20px;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.card-bottom-p {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #777777;
+  margin-left: 11px;
+  margin-bottom: 0;
+}
+
+.text {
+  text-decoration: none;
+  color: black;
+}

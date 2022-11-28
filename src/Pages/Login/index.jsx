@@ -21,7 +21,10 @@ export const Login = () => {
 
     if (token) {
       window.localStorage.setItem("token", token);
-      Navigate("/");
+      Navigate("/all");
+    }
+    else if (token === null) {
+      Navigate("/login")
     }
   }
 

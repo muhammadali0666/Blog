@@ -1,8 +1,8 @@
-import LeftColImg from "../../assets/img/right.png"
-import Facebook from "../../assets/img/facebook.png"
-import Github from "../../assets/img/github.png"
-import Linkedin from "../../assets/img/linkedin.png"
-import Twitter from "../../assets/img/twitter.png"
+import LeftColImg from "../../Assets/img/right.png"
+import Facebook from "../../Assets/img/facebook.png"
+import Github from "../../Assets/img/github.png"
+import Linkedin from "../../Assets/img/linkedin.png"
+import Twitter from "../../Assets/img/twitter.png"
 import "./leftCol.css"
 
 export const LeftCol = () => {
