@@ -36,7 +36,7 @@ export const Posts = () => {
   function handleNext() {
     setCount((count) => count + 1)
   }
-  console.log(count);
+ 
 
   return (
     <Layout className="container d-flex">
@@ -50,8 +50,9 @@ export const Posts = () => {
             {post?.length > 0 &&
               post.map((e) => (
                 <li>
-                  <NavLink className="text" to={"/posts/:postId" + e.id}>
+                  <NavLink className="text" to={"/singlpage/" + e.id}>
                     <div className="cards w-75">
+         
                       <div className="card-box">
                         <p className="card-box-p">
                           {moment(e.create_time).format("LL")}
@@ -73,7 +74,7 @@ export const Posts = () => {
             <button disabled={count === 0 ? true : false} ref={prevs} onClick={handlePrev} className="btn btn-dark ms-auto">
               Prev
             </button>
-            <button disabled={count === 7 ? true : false} ref={next} onClick={handleNext} className="btn btn-dark ms-3">
+            <button disabled={count === 6 ? true : false} ref={next} onClick={handleNext} className="btn btn-dark ms-3">
               Next
             </button>
           </div>

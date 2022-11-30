@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400,500");
+
+@-moz-keyframes glow-star {
+  40% {
+    -moz-opacity: 0.3;
+  }
+  90%,
+  100% {
+    -moz-opacity: 1;
+    -moz-transform: scale(1);
+  }
+}
+@-webkit-keyframes glow-star {
+  40% {
+    -webkit-opacity: 0.3;
+  }
+  90%,
+  100% {
+    -webkit-opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+@keyframes glow-star {
+  40% {
+    -webkit-opacity: 0.3;
+    opacity: 0.3;
+  }
+  90%,
+  100% {
+    -webkit-opacity: 1;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1.2);
+    border-radius: 999999px;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Dosis", sans-serif;
+}
+
+.bg-purple {
+  background: url(http://salehriaz.com/404Page/img/bg_purple.png);
+  background-repeat: repeat-x;
+  background-size: cover;
+  background-position: left top;
+  height: 100%;
+  overflow: hidden;
+}
+
+.central-body {
+  /*    width: 100%;*/
+  padding: 17% 5% 10% 5%;
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,800");
+.error-container {
+  text-align: center;
+  font-size: 180px;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 800;
+  margin: 20px 15px;
+}
+.error-container > span {
+  display: inline-block;
+  line-height: 0.7;
+  position: relative;
+  color: #ffb485;
+}
+.error-container > span {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+.error-container > span:nth-of-type(1) {
+  color: #d1f2a5;
+  animation: colordancing 4s infinite;
+}
+.error-container > span:nth-of-type(3) {
+  color: #f56991;
+  animation: colordancing2 4s infinite;
+}
+.error-container > span:nth-of-type(2) {
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+}
+.error-container > span:nth-of-type(2):before,
+.error-container > span:nth-of-type(2):after {
+  border-radius: 0%;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 999px;
+  box-shadow: inset 30px 0 0 rgba(209, 242, 165, 0.4),
+    inset 0 30px 0 rgba(239, 250, 180, 0.4),
+    inset -30px 0 0 rgba(255, 196, 140, 0.4),
+    inset 0 -30px 0 rgba(245, 105, 145, 0.4);
+  animation: shadowsdancing 4s infinite;
+}
+.error-container > span:nth-of-type(2):before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.screen-reader-text {
+  position: absolute;
+  top: -9999em;
+  left: -9999em;
+}
+@keyframes shadowsdancing {
+  0% {
+    box-shadow: inset 30px 0 0 rgba(209, 242, 165, 0.4),
+      inset 0 30px 0 rgba(239, 250, 180, 0.4),
+      inset -30px 0 0 rgba(255, 196, 140, 0.4),
+      inset 0 -30px 0 rgba(245, 105, 145, 0.4);
+  }
+  25% {
+    box-shadow: inset 30px 0 0 rgba(245, 105, 145, 0.4),
+      inset 0 30px 0 rgba(209, 242, 165, 0.4),
+      inset -30px 0 0 rgba(239, 250, 180, 0.4),
+      inset 0 -30px 0 rgba(255, 196, 140, 0.4);
+  }
+  50% {
+    box-shadow: inset 30px 0 0 rgba(255, 196, 140, 0.4),
+      inset 0 30px 0 rgba(245, 105, 145, 0.4),
+      inset -30px 0 0 rgba(209, 242, 165, 0.4),
+      inset 0 -30px 0 rgba(239, 250, 180, 0.4);
+  }
+  75% {
+    box-shadow: inset 30px 0 0 rgba(239, 250, 180, 0.4),
+      inset 0 30px 0 rgba(255, 196, 140, 0.4),
+      inset -30px 0 0 rgba(245, 105, 145, 0.4),
+      inset 0 -30px 0 rgba(209, 242, 165, 0.4);
+  }
+  100% {
+    box-shadow: inset 30px 0 0 rgba(209, 242, 165, 0.4),
+      inset 0 30px 0 rgba(239, 250, 180, 0.4),
+      inset -30px 0 0 rgba(255, 196, 140, 0.4),
+      inset 0 -30px 0 rgba(245, 105, 145, 0.4);
+  }
+}
+@keyframes colordancing {
+  0% {
+    color: #d1f2a5;
+  }
+  25% {
+    color: #f56991;
+  }
+  50% {
+    color: #ffc48c;
+  }
+  75% {
+    color: #effab4;
+  }
+  100% {
+    color: #d1f2a5;
+  }
+}
+@keyframes colordancing2 {
+  0% {
+    color: #ffc48c;
+  }
+  25% {
+    color: #effab4;
+  }
+  50% {
+    color: #d1f2a5;
+  }
+  75% {
+    color: #f56991;
+  }
+  100% {
+    color: #ffc48c;
+  }
+}
+
+.stars {
+  background: url(http://salehriaz.com/404Page/img/overlay_stars.svg);
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: left top;
+}
+
+.glowing_stars .star {
+  position: absolute;
+  border-radius: 100%;
+  background-color: #fff;
+  width: 3px;
+  height: 3px;
+  opacity: 0.3;
+  will-change: opacity;
+}
+
+.glowing_stars .star:nth-child(1) {
+  top: 80%;
+  left: 25%;
+  animation: glow-star 2s infinite ease-in-out alternate 1s;
+}
+.glowing_stars .star:nth-child(2) {
+  top: 20%;
+  left: 40%;
+  animation: glow-star 2s infinite ease-in-out alternate 3s;
+}
+.glowing_stars .star:nth-child(3) {
+  top: 25%;
+  left: 25%;
+  animation: glow-star 2s infinite ease-in-out alternate 5s;
+}
+.glowing_stars .star:nth-child(4) {
+  top: 75%;
+  left: 80%;
+  animation: glow-star 2s infinite ease-in-out alternate 7s;
+}
+.glowing_stars .star:nth-child(5) {
+  top: 90%;
+  left: 50%;
+  animation: glow-star 2s infinite ease-in-out alternate 9s;
+}
+
+@media only screen and (max-width: 600px) {
+  .central-body {
+    padding-top: 25%;
+  }
+
+  .error-container {
+    font-size: 110px;
+    margin: 25% 4%;
+  }
+  .error-container > span:nth-of-type(2) {
+    width: 80px;
+    height: 80px;
+    border-radius: 999px;
+  }
+
+  .error-container > span:nth-of-type(2):before,
+  .error-container > span:nth-of-type(2):after {
+    box-shadow: inset 15px 0 0 rgba(209, 242, 165, 0.4),
+      inset 0 15px 0 rgba(239, 250, 180, 0.4),
+      inset -15px 0 0 rgba(255, 196, 140, 0.4),
+      inset 0 -15px 0 rgba(245, 105, 145, 0.4);
+  }
+
+  @keyframes shadowsdancing {
+    0% {
+      box-shadow: inset 15px 0 0 rgba(209, 242, 165, 0.4),
+        inset 0 15px 0 rgba(239, 250, 180, 0.4),
+        inset -15px 0 0 rgba(255, 196, 140, 0.4),
+        inset 0 -15px 0 rgba(245, 105, 145, 0.4);
+    }
+    25% {
+      box-shadow: inset 15px 0 0 rgba(245, 105, 145, 0.4),
+        inset 0 15px 0 rgba(209, 242, 165, 0.4),
+        inset -15px 0 0 rgba(239, 250, 180, 0.4),
+        inset 0 -15px 0 rgba(255, 196, 140, 0.4);
+    }
+    50% {
+      box-shadow: inset 15px 0 0 rgba(255, 196, 140, 0.4),
+        inset 0 15px 0 rgba(245, 105, 145, 0.4),
+        inset -15px 0 0 rgba(209, 242, 165, 0.4),
+        inset 0 -15px 0 rgba(239, 250, 180, 0.4);
+    }
+    75% {
+      box-shadow: inset 15px 0 0 rgba(239, 250, 180, 0.4),
+        inset 0 15px 0 rgba(255, 196, 140, 0.4),
+        inset -15px 0 0 rgba(245, 105, 145, 0.4),
+        inset 0 -15px 0 rgba(209, 242, 165, 0.4);
+    }
+    100% {
+      box-shadow: inset 15px 0 0 rgba(209, 242, 165, 0.4),
+        inset 0 15px 0 rgba(239, 250, 180, 0.4),
+        inset -15px 0 0 rgba(255, 196, 140, 0.4),
+        inset 0 -15px 0 rgba(245, 105, 145, 0.4);
+    }
+  }
+}
